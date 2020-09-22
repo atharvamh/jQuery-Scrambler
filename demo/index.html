@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+         body{
+             margin:50px;
+         }
+         .scramble{
+             font-family: sans-serif;
+         }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../jquery.scrambler.js"></script>
+      	<script>
+               $(document).ready(function(){
+
+                   /* Using charbychar effect */
+                     var do_charbychar = function(){
+                       $("#text1").scrambler({
+                           effect: "charbychar",
+                           final_text : "Heisenberg",
+                           keep_whitespaces: false,
+                           speed: 50, // speed in which random chars will appear in letters not yet revelaed
+                           reveal: 100 // number of miliseconds to reveal one character
+                       });
+                     }
+
+                     $("#do1").click(function(){ do_charbychar(); });
+
+
+                     /* Using typewriter effect */
+                     $("#do2").click(function(){
+                       $("#text2").scrambler({
+                         effect: "typewriter",
+                         final_text: "Breaking Bad",
+                         speed: 50,
+                         reveal: 50
+                       });
+                     });
+
+               });
+      	</script>
+    </head>
+    <body>
+      <h1 class="scramble" id="text1">Walter H. White</h1>
+      <button id="do1">char by char</button>
+      <hr />
+      <h1 class="scramble" id="text2">Jesse Pinkman</h1>
+      <button id="do2">Typewriter</button>
+    </body>
+</html>

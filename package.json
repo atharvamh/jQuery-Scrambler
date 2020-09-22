@@ -1,0 +1,19 @@
+{
+  "name": "jquery-scrambler",
+  "version": "1.0.0",
+  "description": "Text Scrambling-Decoding effect",
+  "main": "jquery.scrambler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvamh/jQuery-Scrambler.git"
+  },
+  "author": "Atharva Mhetar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atharvamh/jQuery-Scrambler/issues"
+  },
+  "homepage": "https://github.com/atharvamh/jQuery-Scrambler#readme"
+}

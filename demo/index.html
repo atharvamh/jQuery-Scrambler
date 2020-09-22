@@ -15,17 +15,15 @@
                $(document).ready(function(){
 
                    /* Using charbychar effect */
-                     var do_charbychar = function(){
-                       $("#text1").scrambler({
+                     $("#do1").click(function(){
+                         $("#text1").scrambler({
                            effect: "charbychar",
                            final_text : "Heisenberg",
                            keep_whitespaces: false,
                            speed: 50, // speed in which random chars will appear in letters not yet revelaed
                            reveal: 100 // number of miliseconds to reveal one character
                        });
-                     }
-
-                     $("#do1").click(function(){ do_charbychar(); });
+                     });
 
 
                      /* Using typewriter effect */

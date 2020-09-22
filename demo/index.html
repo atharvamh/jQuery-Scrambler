@@ -15,19 +15,19 @@
                $(document).ready(function(){
 
                    /* Using charbychar effect */
-                     $("#do1").click(function(){
+                     $("#btn1").click(function(){
                          $("#text1").scrambler({
                            effect: "charbychar",
                            final_text : "Heisenberg",
                            keep_whitespaces: false,
-                           speed: 50, // speed in which random chars will appear in letters not yet revelaed
-                           reveal: 100 // number of miliseconds to reveal one character
+                           speed: 50,
+                           reveal: 100    // number of miliseconds to reveal one character
                        });
                      });
 
 
-                     /* Using typewriter effect */
-                     $("#do2").click(function(){
+                     /* Using typing effect */
+                     $("#btn2").click(function(){
                        $("#text2").scrambler({
                          effect: "typing",
                          final_text: "Breaking Bad",
@@ -41,9 +41,9 @@
     </head>
     <body>
       <h1 class="scramble" id="text1">Walter H. White</h1>
-      <button id="do1">char by char</button>
+      <button id="btn1">char by char</button>
       <hr />
       <h1 class="scramble" id="text2">Jesse Pinkman</h1>
-      <button id="do2">Typewriter</button>
+      <button id="btn2">Typewriter</button>
     </body>
 </html>
